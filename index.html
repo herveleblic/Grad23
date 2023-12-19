@@ -12,15 +12,13 @@
 		background-color: rgb(255, 255, 255);
 		}
 		.first {
-			font-family: sans-serif;
-			font-size: larger;
-			}
+		font-family: sans-serif;
+		font-size: larger;
+		}
 
 		.fourc{
-	
 		font-family:  sans-serif
 		}
-		
 		.fourc {
 		display: flex;
 		}
@@ -29,13 +27,18 @@
 		width: 21vw;
 		}
 
-
-		
-
 		.rest {
 		display: flex;
 		}
 		.rest > div {
+		margin: .5em;
+		width: 40vw;
+		}
+
+		.under {
+		display: flex;
+		}
+		.under > div {
 		margin: .5em;
 		width: 40vw;
 		}
@@ -57,6 +60,8 @@
 		border-top: 1px solid rgb(94, 94, 99);
 		}
 
+		
+
 		.four {
 		margin: .8em;
 		text-align: left;
@@ -71,9 +76,6 @@
 		font-size: larger;
 		}
 
-		
-
-
 		.surface{ 
 		width: 200%;
 		}
@@ -83,7 +85,6 @@
 		flex-direction: column;
 		margin-right: 1em;
 		}
-
 		.fourc > div {
 		width: 100%;
 		}
@@ -94,7 +95,6 @@
 		.rest > div {
 		width: 100%;
 		}
-
 		.four {
 		flex-direction: column;
 		margin-right: 1em;
@@ -102,9 +102,8 @@
 		.four > div {
 		width: 100%;
 		}
-		
 		.surface{
-			width: 200%;
+		width: 200%;
 		}
 		}
 
@@ -113,27 +112,19 @@
 	 width: 100%;
      height: 100%;
      margin-right: 10%;
-		
 		}
-
-
         .b2 {
     margin-right: 30px;
 	 width: 100%;
-    
      margin-right: 10%;
-		
 		}
 		.b3 {
     margin-right: 3px;
 	 width: 5%;
 	 height: 5%;
-    
      margin-right: 0%;
-		
 		}
 		
-     
         .kyo {
 		display: flex;
 		}
@@ -154,35 +145,39 @@
 		font-weight: inherit;
 		color: var(--accent);
 		}
-
 		label {
 		cursor: pointer;
 		}
-
 		a {
-			outline: none;
-			text-decoration: none;
+		outline: none;
+		text-decoration: none;
 		}
 		a:hover {
 	    border-bottom: 2px solid;
-	
 		}
 		a:visited {
   		color: rgb(0, 0, 0);
 		}
-		
-
 		a:active, label:active {
 		letter-spacing: .075rem
 		}
-		@media (max-width:1000px) {
-	.rightalign {text-align: left; margin-top: -.25em}
-}
 		
+		@media (max-width:1000px) {
+		.rightalign {text-align: left; margin-top: -.25em}
+		}
+		
+		details {
+  		font:
+    	
+    	Calibri,
+   		sans-serif;
+ 		
+}
 	</style>
 </head>
 
 <body>
+	
 	<section class=fourc>
 		<div>
 			<h2>Louise Dousset</h2>	
@@ -193,138 +188,172 @@
 		<div></div>
 
 		<div>
-			<h2><a href="contact.html">index</a> </h2>
+			<h2><a href="contact.html">info</a> </h2>
 		</div>
 		
 		<div>
-			<h2><a href="contact.html">contact</a> </h2>
+			
 		</div>
 
 	</section>
-
 	<br>
-	<section class="rest">
-		<div class="three">
-			<p>01</p>
-			<br>
-			<br>
-			<br>
-			<img src="surfaceA4.gif" alt="main" id="ele">
+
+	<details>
+
+		<summary class="rest">
+			<div class="three"><p>01</p></div>
+			<div class="three"><p>The day a poor form became rich</p> </div>
 			
-			<video autoplay="" muted="" loop="" playsinline="" id="ele">
+			<div class="three"><p>object, 2023</p></div>
+		</summary>
+
+		<section class="under">
+			<div class="three">
+				<br>
+				<br>
+				<br>
+				<img src="surfaceA4.gif" alt="main" id="ele">
+			
+				<video autoplay="" muted="" loop="" playsinline="" id="ele">
 				<source src="autre2.mov">
 				</video>
-		</div>
+			</div>
 
-		<div class="four">
-			<p> The day a poor form became rich</p>
-			<br>
-			<br>
-			<img src="generation1.gif" alt="main" id="ele">
-		</div>
+			<div class="four">
+				<br>
+				<br>
+				<img src="generation1.gif" alt="main" id="ele">
+			</div>
 
-		<div>
-			<p class="first"> "The day a poor form became rich" is a tiny-scale project using waste material in an act of revaluation.
+			<div>
+				<p class="first"> "The day a poor form became rich" is a tiny-scale project using waste material in an act of revaluation.
 				The initial intention was to understand the mechanism behind the industrially produced aluminium clip through the practice of reproducing it, based on a broad and heterogenous survey of existing metal clips.
 				A evolving range of clips are made from aluminium waste using only the techniques available in their given production context. Each produced clip follows dimensions drawn from ISO paper standards, allowing for simplified calculations, appealing proportions, and the possibility of an array of scales 
 				<br>
 				Functionally, the clips attach to surfaces, work as display devices for holding papers, and can clip onto each other to build lightweight structures. The clips also work as tools for assembling further clips — holding springs to metal plates while fastening zip ties and acting as benchmarks for placement of holes and indentations on the plates.
 				On a representational level, the clips exemplify the idea that developing things at one scale means developing them on all scales. <a href="https://herveleblic.github.io/the-day/day%20a%20poor%20form%20became%20rich.html">here</a></p>
-		</div>
+			</div>
 
-	</section>
+		</section>
+	</details>
 	
-	
-	
+	<details>
 
-	<section class="rest">
-		<div class="three">
-			<p>02</p>
-		</div>
+		<summary class="rest">
+			<div class="three"><p>02</p></div>
+			<div class="three"><p>Kyocera</p></div>
+			<div class="three"><p>printing, 2023</p></div>
+		</summary>
 
-		<div class="four">
-			<p> Kyocera</p>
-            <br>
-            <img src="green.gif" alt="greenbook" class="b2">
-			<img src="pinrecursion2.gif" alt="greenbook" class="b2">
-		</div>
+		<section class="under">
+		 	<div class="three">
+				<img src="round1.gif" alt="greenbook" class="b2">
+				<img src="rotation2.gif" alt="greenbook" class="b2">
+			</div>
 
-		<div>
-			<p class="first">"Kyocera" started from a fascination for printing as a medium and for "obsolete" office printers as machines to find, repair, and use.
+			<div class="four">
+            	<br>
+            	<img src="green.gif" alt="greenbook" class="b2">
+				<img src="pinrecursion2.gif" alt="greenbook" class="b2">
+				<img src="N4.gif" alt="greenbook" class="b2">
+				
+			</div>
+
+			<div>
+				<p class="first">"Kyocera" started from a fascination for printing as a medium and for "obsolete" office printers as machines to find, repair, and use.
 				Paper was bought cheaply from thrift stores and flea markets or acquired through contributions of old stock from businesses and schools.
 				Access to printers in institutional settings is often indirect: fees, restrictions around material type and format, and access control are impediments to experimentation. "Kyocera" is an attempt to make a seemingly hard to access tool more accessible. The aim is to create proximity with and through the practice of printing and producing books.
-			</p>
-			<br>
-			<p class="first">for more gif click <a href="https://herveleblic.github.io/the-day/">here</a> </p>
-	
-		</div>
-        
-	</section>
-
-    <section class="kyo">
-		<div><img src="round1.gif" alt="greenbook" class="b1"></div>
-		<div><img src="N4.gif" alt="greenbook" class="b1"></div>
-		<div><img src="rotation2.gif" alt="greenbook" class="b1"></div>
-		
-    </section>
-	
-
-
-
-
-		<section class="rest">
-			<div class="three">  <p>03</p></div>
-			<div class="four"> <p>Anonymous Artefacts </p> </div>
-			<div class="three"></div>
-		</section>
-	
-		<section class="rest">
-			<div class="three">  <p>04</p></div>
-			<div class="four"> <p>L'Ouvroir </p> </div>
-			<div class="three"></div>
-		</section>
-
-	<section class="rest">
-	<div class="three">
-		<p>05</p>
-	</div>
-	
-<div class="four">
-	<p> Erratic</p>
-		<br>
-		
-			</div>
-	
-			<div>
-				<p class="first">Erratic was the result of a meticulous exercise of selection and substitution, based on the Baskerville typeface. The attempt was to highlight the signifi- cant elements of a typeface and the essence of its recognition.
-					Once the significant parts were chosen, they were used as a base for exploring multiple ways of relating these fragments with one another.
 				</p>
 				<br>
-			
-		
+				<p class="first">for more gif click <a href="https://herveleblic.github.io/the-day/">here</a> </p>
 			</div>
-			
+        
 		</section>
-		<video autoplay="" muted="" loop="" playsinline="" id="ele">
-			<source src="Typo.mp4">
-			</video>
+	</details>
 
-			<section class="rest">
-				<div class="three">  <p>06</p>
-					<img src="old.png" alt="greenbook" class="b1">
+   
+	<details>
+		<summary class="rest">
+			<div class="three"><p>03</p></div>
+			<div class="three"><p>Anonymous Artefacts </p></div>
+			<div class="three"><p>multimedia, printing, 2023</p></div>
+			
+		</summary>
+
+		<section class="rest">
+		<div class="four"> </div>
+		<div class="three"> <img src="booklet.gif" alt="book" class="b2"> </div>
+		<div class="three"></div>
+	</section>
+</details>
+	
+	
+	<section class="rest">
+		<div class="three">  <p>04</p></div>
+		<div class="four"> <p>L'Ouvroir </p> </div>
+		<div class="three"> <p>graphic</p></div>
+	</section>
+
+	<details>
+
+		<summary class="rest">
+
+			<div class="three"> <p>05</p></div>
+			<div class="three"> <p> Erratic</p></div>
+			<div class="three"><p>typography, animation, 2021</p></div>
+
+		</summary>
+		
+		<section class="under">
+		<div class="three">
+		</div>
+	
+		<div class="four">
+		<br>
+		</div>
+	
+		<div><p class="first">Erratic was the result of a meticulous exercise of selection and substitution, based on the Baskerville typeface. The attempt was to highlight the signifi- cant elements of a typeface and the essence of its recognition.
+		Once the significant parts were chosen, they were used as a base for exploring multiple ways of relating these fragments with one another.
+		</p>
+		<br>
+		</div>
+		
+	</section>
+	<video autoplay="" muted="" loop="" playsinline="" id="ele">
+		<source src="Typo.mp4">
+	</video>
+
+</details>
+	
 
 	
-				
-				</div>
-				<div class="four"> <p>Unwitting encounters </p> </div>
-				<div class="three">Unwitting Encounters is an ongoing practice. This project involves conducting filmed interviews with strangers encountered while walking in Parisian streets. This series of footage resulted in a collection of lively interactions and unexpected dialogues. Videos are accessible <a href="https://youtube.com/playlist?list=PLPYPlGPOyAncl4crgdOB4iYNr9a71PZac"> here</a></div>
-			</section>
+
+	<details>
+		<summary class="rest">
+			<div class="three"> <p>06</p></div>
+			<div class="four"> <p>Unwitting encounters</p></div>
+			<div class="four"> <p>film, documentary, 2021</p></div>
+		
+		</summary>
+		<section class="under">
+			<div class="three">  
+			<img src="old.png" alt="greenbook" class="b1">
+			</div>
+	
+			<div class="four"> 
+			</div>
+			<div class="three">Unwitting Encounters is an ongoing practice. This project involves conducting filmed interviews with strangers encountered while walking in Parisian streets. This series of footage resulted in a collection of lively interactions and unexpected dialogues. Videos are accessible <a href="https://youtube.com/playlist?list=PLPYPlGPOyAncl4crgdOB4iYNr9a71PZac"> here</a>
+			</div>
+		</section>
+
+	</details>
+	
 	
 	<hr>
-</div>
-<img src="round1.gif" alt="greenbook" class="b3">
-<img src="round1.gif" alt="greenbook" class="b3">
-<img src="round1.gif" alt="greenbook" class="b3">
-<p>Website coded by Louise Dousset</p>
-<div>
+
+	<img src="round1.gif" alt="greenbook" class="b3">
+	<img src="round1.gif" alt="greenbook" class="b3">
+	<img src="round1.gif" alt="greenbook" class="b3">
+	<p class="three"> code by Louise Dousset</p>
+
 </body>
