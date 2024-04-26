@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<style>
+		* {
+		margin: 0;
+		}
+		body {
+		margin: .5em;
+		background-color: rgb(255, 255, 255);
+		}
+		.first {
+			font-family: sans-serif;
+			font-size: larger;
+			}
+
+		.fourc{
+	
+		font-family:  sans-serif
+		}
+		
+		.fourc {
+		display: flex;
+		}
+		.fourc > div {
+		margin: .5em;
+		width: 21vw;
+		}
+
+
+		a {
+			color: black
+			text-align : right
+		}
+
+		.rest {
+		display: flex;
+		}
+		.rest > div {
+		margin: .5em;
+		width: 40vw;
+		}
+		
+		
+		#inkloop {
+            position: fixed;
+            right: 0;
+            bottom: 50;
+            min-width: 50%;
+            min-height: 100%;
+            z-index: -2;}
+
+	
+		#ele {position: relative !important; width: 100% !important; margin-bottom: 5em}
+		
+		#ele { 
+
+  width: 100%;
+  height: auto;
+}
+
+
+		.rest {
+		border-top: 1px solid rgb(94, 94, 99);
+		}
+
+		.four {
+		margin: .8em;
+		text-align: left;
+		font-family:  sans-serif;
+		font-size: larger;
+		}
+
+		.three {
+		margin: .8em;
+		text-align: left;
+		font-family:sans-serif;
+		font-size: larger;
+		}
+
+		.ele {
+	 width: 100%;
+     height: 50%;
+		
+		}
+		
+		
+		@media (max-width: 700px) {
+		.fourc {
+		flex-direction: column;
+		margin-right: 1em;
+		}
+
+		.fourc > div {
+		width: 100%;
+		}
+		.rest {
+		flex-direction: column;
+		margin-right: 1em;
+		}
+		.rest > div {
+		width: 100%;
+		}
+
+		.four {
+		flex-direction: column;
+		margin-right: 1em;
+		}
+		.four > div {
+		width: 100%;
+		}
+		
+		}
+
+        .b1 {
+    margin-right: 30px;
+	 width: 100%;
+     height: 50%;
+     margin-right: 30%;
+		
+		}
+     
+        .kyo {
+		display: flex;
+		}
+		.kyo > div {
+		margin: .20em;
+		width: 25vw;
+		}
+		.kyo {
+		margin: .20em;
+		text-align: left;
+		font-family:  sans-serif;
+		font-size: larger;
+        width: 10%;
+        height: 50%;
+		}
+
+	    b {
+		font-weight: inherit;
+		color: var(--accent);
+		}
+
+		label {
+		cursor: pointer;
+		}
+
+		a:hover, label:hover {
+		font-style: italic
+		}
+		a:active, label:active {
+		letter-spacing: .075rem
+		}
+		@media (max-width:1000px) {
+	.rightalign {text-align: left; margin-top: -.25em}
+}
+		
+	</style>
+</head>
+
+<body>
+	<section class=fourc>
+		<div>
+			<h2>Louise Dousset</h2>	
+		</div>
+		<div>
+				
+		</div>
+		<div>
+			
+		</div>
+		<div>
+			<h2><a href="contact.html">contact</a>	</h2>
+		</div>
+
+	</section>
+	<section class="rest">
+		<div class="three">
+			<p>I II III IV V VI</p>
+		</div>
+
+		<div class="four">
+			<p> The day a poor form became rich</p>
+		</div>
+
+		<div>
+			<p class="first">  They hold paper on their own, but they can also be used together to make more complex, lightweight structures. This radically simplified manufacturing method can be used individually or scaled up to industrial proportions. The clips show that building things at one scale is building them at all scales.</p>
+		</div>
+
+	</section>
+	
+	<video autoplay="" muted="" loop="" playsinline="" id="ele">
+		<source src="autre2.mov">
+		</video>
+	
+
+	<section class="rest">
+		<div class="three">
+			<p>I II III IV V VI</p>
+		</div>
+
+		<div class="four">
+			<p> Kyocera</p>
+            <br>
+            <img src="green.gif" alt="greenbook" class="b1">
+		</div>
+
+		<div>
+			<p class="first">  They hold paper on their own, but they can also be used together to make more complex, lightweight structures. This radically simplified manufacturing method can be used individually or scaled up to industrial proportions. The clips show that building things at one scale is building them at all scales.</p>
+		</div>
+        
+	</section>
+
+    <section class="kyo">
+		<div><img src="green.gif" alt="greenbook" class="b1"></div>
+		<div><img src="green.gif" alt="greenbook" class="b1"></div>
+		<div><img src="green.gif" alt="greenbook" class="b1"></div>
+		<img src="green.gif" alt="greenbook" class="b1">
+    </section>
+	
+</body>
