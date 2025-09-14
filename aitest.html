@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Style général */
+        * {
+            margin: 0;
+            font-family: sans-serif;
+            font-size: 14pt;
+        }
+
+        body {
+            margin: 0.10em;
+            background-color: rgb(194, 194, 194);
+        }
+
+        a {
+            color: rgb(200, 212, 40);
+            outline: none;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: rgb(56, 64, 22);
+        }
+
+        a:hover {
+            color: rgba(217, 27, 21);
+            text-shadow: rgb(56, 64, 22) 5px 0 10px;
+            transform: rotate(3deg);
+        }
+
+        /* Titre de section */
+        .rest {
+            border-top: 1px solid rgb(56, 64, 22);
+            color: rgb(56, 64, 22);
+            margin: 0.5em;
+            text-align: left;
+            font-size: large;
+        }
+
+        /* Structure de la page */
+        .head {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .head > div {
+            margin: 0.4em;
+            width: 40vw;
+        }
+
+        .under {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .under > div {
+            margin: 0.4em;
+            width: 40vw;
+        }
+
+        /* Images */
+        .img {
+            width: 100%;
+            position: relative;
+        }
+
+        /* Flexbox pour aligner des éléments */
+        .kyo {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .kyo > div {
+            margin: 0.5em;
+            width: 21vw;
+        }
+
+        /* Détails spécifiques */
+        details > summary::marker,
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details > summary:active {
+            color: black;
+        }
+
+        details > details {
+            margin-left: 1em;
+        }
+
+        /* Responsivité */
+        @media (max-width: 700px) {
+            .rest {
+                flex-direction: column;
+                padding-right: 5em;
+                height: 100%;
+            }
+
+            .rest > div {
+                width: 100%;
+                max-width: 400px;
+                padding-right: 0.5em;
+            }
+
+            .under {
+                flex-direction: column;
+            }
+
+            .under > div {
+                width: 100%;
+                max-width: 400px;
+                padding-right: 0.5em;
+            }
+
+            .first {
+                flex-direction: column;
+                margin-left: 1em;
+            }
+
+            .first > div {
+                width: 100%;
+            }
+        }
+
+        /* Autres styles */
+        b {
+            font-weight: inherit;
+            color: var(--accent);
+        }
+
+        label {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Entête de la page -->
+    <section class="head">
+        <div>
+            <p>Projects</p>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div>
+            <p><a href="contact.html">info</a></p>
+        </div>
+    </section>
+
+    <br>
+
+    <!-- Détails des projets -->
+    <details>
+        <summary class="rest">
+            <div class="num"><p>2024</p></div>
+            <div><p>Artek en traits</p></div>
+            <div class="three"><p>drawings</p></div>
+        </summary>
+        <section class="under">
+            <div>
+                <img src="sanatorium/multiple.png" alt="" class="img">
+                <img src="sanatorium/chair.png" alt="" class="img">
+            </div>
+            <div class="three">
+                <p><a href="https://paimiosanatorium.com/paimio-sanatorium-artist-residency-diaries-vol2-reclaiming-creativity/">For more click here.</a></p>
+                <img src="sanatorium/artek4.png" alt="" class="img">
+                <img src="sanatorium/artek6.png" alt="" class="img">
+            </div>
+            <div>
+                <p class="first"></p>
+                <img src="sanatorium/multiple2.png" alt="" class="img">
+            </div>
+        </section>
+    </details>
+
+    <!-- Autres projets -->
+    <details>
+        <summary class="rest">
+            <div class="num"><p>2024</p></div>
+            <div><p>Paimio sanatorium</p></div>
+            <div class="three"><p>research, paintings</p></div>
+        </summary>
+        <section class="under">
+            <div></div>
+            <div class="three">
+                <video autoplay muted playsinline loop playsinline id="ele" class="img">
+                    <source src="sanatorium/paimio.m4v">
+                </video>
+            </div>
+            <div>
+                <p class="first"></p>
+                <p><a href="https://paimiosanatorium.com/paimio-sanatorium-artist-residency-diaries-vol2-reclaiming-creativity/">For more click here.</a></p>
+            </div>
+        </section>
+    </details>
+
+    <!-- Projet suivant -->
+    <details>
+        <summary class="rest">
+            <div class="num"><p>2024</p></div>
+            <div><p>Paper lamps</p></div>
+            <div class="three"><p>object</p></div>
+        </summary>
+        <section class="under">
+            <div class="three"><br><br><br></div>
+            <div class="four">
+                <video autoplay muted playsinline loop playsinline id="ele" class="img">
+                    <source src="paper/paper.mov">
+                </video>
+            </div>
+            <div><p class="first"></p></div>
+        </section>
+    </details>
+
+    <!-- Plus de projets -->
+    <details>
+        <summary class="rest">
+            <div class="num"><p>2024</p></div>
+            <div><p>Angeli's the light</p></div>
+            <div class="three"><p>printing</p></div>
+        </summary>
+        <section class="under">
+            <div class="three"><br><br><br></div>
+            <div class="four">
+                <video autoplay muted playsinline loop playsinline id="ele" class="img">
+                    <source src="milan/milan.mov">
+                </video>
+                <img src="milan/milan.jpg" alt="" class="img">
+            </div>
+            <div><p class="first"></p></div>
+        </section>
+    </details>
+
+    <!-- Note de bas de page -->
+    <br>
+    <br>
+    <section>
+        <div>
+            <p>Website coded by Louise Dousset</p>
+        </div>
+    </section>
+</body>
+</html>
