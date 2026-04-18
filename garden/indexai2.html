@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les Marnières</title>
+  <style>
+    * { margin: 0; box-sizing: border-box; }
+
+    body {
+      font: 16px/1.6 Arial, sans-serif;
+      background: lightgrey;
+      color: black;
+      padding: 2rem;
+    }
+
+    details {
+      margin-bottom: 1.5rem;
+    }
+
+    summary {
+      font-size: 1.2rem;
+      color: rgb(15, 40, 220);
+      cursor: pointer;
+      margin-bottom: 1rem;
+      box-shadow: inset 0 0 1em red, 0 0 2em red;
+      display: inline-block;
+      padding: 2px 6px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 0.95em 0.15em inset blue;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card img,
+    .card gif {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card figcaption {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.85rem;
+      flex: 1;
+    }
+
+    .card.text-only {
+      padding: 1rem;
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin: 2rem 0 1rem;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 1rem; }
+      .grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
+    }
+  </style>
+</head>
+<body>
+
+<details>
+  <summary>Les Marnières</summary>
+</details>
+
+<details>
+  <summary>Les Marnières</summary>
+</details>
+
+<details>
+  <summary>Les plantes commandées chez Semailles</summary>
+  <div class="grid">
+    <figure class="card"><img src="Amarante tête d'éléphant.png"><figcaption>Amarante tête d'éléphant</figcaption></figure>
+    <figure class="card"><img src="Fève d'Aguadulce.png"><figcaption>Fève d'Aguadulce</figcaption></figure>
+    <figure class="card"><img src="Amarante Queue de renard rouge.png"><figcaption>Amarante Queue de renard rouge</figcaption></figure>
+    <figure class="card"><img src="Lin Bleu (engrais vert).png"><figcaption>Lin Bleu (engrais vert)</figcaption></figure>
+    <figure class="card"><img src="Chou kale.png"><figcaption>Chou kale</figcaption></figure>
+    <figure class="card"><img src="Pois à rames mangetout.png"><figcaption>Pois à rames mangetout</figcaption></figure>
+    <figure class="card"><img src="Chervis.png"><figcaption>Chervis</figcaption></figure>
+    <figure class="card"><img src="Myosotis.png"><figcaption>Myosotis</figcaption></figure>
+    <figure class="card"><img src="Armoise annuelle.png"><figcaption>Armoise annuelle</figcaption></figure>
+    <figure class="card"><img src="Côte de bette à cardes rouges.png"><figcaption>Côte de bette à cardes rouges</figcaption></figure>
+  </div>
+</details>
+
+<details>
+  <summary>Les Marnières</summary>
+  <div class="grid">
+    <figure class="card"><img src="soil.gif"><figcaption>Good soil</figcaption></figure>
+    <figure class="card text-only"><figcaption>Si je ramasse une poignée de terre et trouve quatre vers ou plus, je travaillerai avec toi.</figcaption></figure>
+    <figure class="card"><img src="oct7.jpeg"><figcaption>Broad beans (fèves) après un mois et demi — en espérant qu'elles passent l'hiver.</figcaption></figure>
+    <figure class="card"><img src="sept1.jpeg"><figcaption></figcaption></figure>
+    <figure class="card"><img src="oct2.jpeg"><figcaption>Alix ramasse un tas de feuilles.</figcaption></figure>
+    <figure class="card"><img src="oct3.jpeg"><figcaption>Premier essai pour faire un sol fertile durant l'hiver. Un grand tas de feuilles sous de larges bâches plastiques.</figcaption></figure>
+    <figure class="card"><img src="oct1.jpeg"><figcaption>Mon père, contrairement à moi, est dans l'anticipation — il aime ajouter des clôtures partout autour des plantes.</figcaption></figure>
+    <figure class="card"><img src="fukuoka.jpg"><figcaption>« Quand on pense qu'on commence à comprendre la nature, on peut être sûr qu'on est sur la mauvaise piste. »</figcaption></figure>
+    <figure class="card"><img src="fukuoka.jpg"><figcaption>Quatre principes : ne pas cultiver, pas de fertilisant chimique, pas d'herbicide, pas de dépendance aux produits chimiques.</figcaption></figure>
+    <figure class="card"><img src="fukuoka.jpg"><figcaption>« J'aspirais à une manière de cultiver naturelle, qui rende le travail plus aisé et non plus dur. »</figcaption></figure>
+  </div>
+</details>
+
+<details>
+  <summary>À trouver</summary>
+  <div class="grid">
+    <figure class="card"><img src="Old.jpeg"><figcaption>Old Man's Beard (Clematis vitalba)</figcaption></figure>
+    <figure class="card"><img src="larmedejob.jpeg"><figcaption>Larme de Job (Coix lacryma-jobi) — graines en perles</figcaption></figure>
+    <figure class="card"><img src="amarante.jpeg"><figcaption>Amaranthus tricolor, Joseph's Coat</figcaption></figure>
+  </div>
+</details>
+
+<details>
+  <summary>Cliquer sur une image pour en faire apparaître une autre</summary>
+  <div class="grid" id="random-grid">
+    <figure class="card clickable"><img src="soil.gif"><figcaption>Cliquez pour révéler</figcaption></figure>
+    <figure class="card clickable"><img src="oct1.jpeg"><figcaption>Cliquez pour révéler</figcaption></figure>
+    <figure class="card clickable"><img src="oct2.jpeg"><figcaption>Cliquez pour révéler</figcaption></figure>
+    <figure class="card clickable"><img src="oct3.jpeg"><figcaption>Cliquez pour révéler</figcaption></figure>
+    <figure class="card clickable"><img src="fukuoka.jpg"><figcaption>Cliquez pour révéler</figcaption></figure>
+    <figure class="card clickable"><img src="amarante.jpeg"><figcaption>Cliquez pour révéler</figcaption></figure>
+  </div>
+</details>
+
+<style>
+  .card.clickable { cursor: pointer; position: relative; overflow: hidden; }
+  .card.clickable img { transition: opacity 0.3s; }
+  .card.clickable .overlay-img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.4s;
+    pointer-events: none;
+  }
+  .card.clickable.revealed .overlay-img { opacity: 1; }
+  .card.clickable.revealed > img { opacity: 0; }
+</style>
+
+<script>
+  const allImages = [
+    "soil.gif", "soil2.gif", "pot.gif",
+    "oct1.jpeg", "oct2.jpeg", "oct3.jpeg", "oct7.jpeg",
+    "sept1.jpeg", "fukuoka.jpg", "Old.jpeg",
+    "larmedejob.jpeg", "amarante.jpeg",
+    "Amarante tête d'éléphant.png", "Fève d'Aguadulce.png",
+    "Amarante Queue de renard rouge.png", "Lin Bleu (engrais vert).png",
+    "Chou kale.png", "Pois à rames mangetout.png",
+    "Chervis.png", "Myosotis.png", "Armoise annuelle.png",
+    "Côte de bette à cardes rouges.png"
+  ];
+
+  document.querySelectorAll('.card.clickable').forEach(card => {
+    const overlay = document.createElement('img');
+    overlay.className = 'overlay-img';
+    card.appendChild(overlay);
+
+    card.addEventListener('click', () => {
+      const current = card.querySelector('img:not(.overlay-img)').src.split('/').pop();
+      let pick;
+      do { pick = allImages[Math.floor(Math.random() * allImages.length)]; }
+      while (pick === decodeURIComponent(current));
+
+      overlay.src = pick;
+      card.classList.toggle('revealed');
+      card.querySelector('figcaption').textContent = card.classList.contains('revealed')
+        ? pick.replace(/\.[^.]+$/, '') : 'Cliquez pour révéler';
+    });
+  });
+</script>
+
+<h1>Barry Pepper : jardiner ou le pouvoir de planter sans attendre de résultats<br>
+gardening or the power of sowing seeds and roots</h1>
+
+<div class="grid">
+  <figure class="card"><img src="soil2.gif"><figcaption>Good soil</figcaption></figure>
+  <figure class="card"><img src="pot.gif"><figcaption>Good soil</figcaption></figure>
+  <figure class="card"><img src="soil.gif"><figcaption>Good soil</figcaption></figure>
+</div>
+
+<audio autoplay loop>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>

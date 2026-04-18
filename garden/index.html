@@ -1,217 +1,227 @@
 <!DOCTYPE html>
-
-<html lang="en"><head>
-
+<html lang="fr">
+<head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les Marnières</title>
+  <style>
+    * { margin: 0; box-sizing: border-box; }
 
-  <title>Enzo robbery</title>
-  <meta name="description" content="Un designer e accademico italiano.
-  ily enzo">
-  
-<!-- 
+    body {
+      font: 16px Arial, sans-serif;
+      background: lightgrey;
+      color: black;
+      padding: 2rem;
+    }
 
-Funzione della ricerca estetica ...
-Enzo Mari 1932-
-Milano, Edizioni di Comunità 1970
+    details {
+    border-radius: 10px;
 
+    box-shadow: 0 0 1em 0.15em inset brown;
+      padding: 3px 11px;
 
-Enzo Mari
-Arturo Carlo. Quintavalle Enzo Mari 1932-
-Parma : Università di Parma, Centro studi e archivio della comunicazione 1983
+      margin-bottom: -0,51rem;
+    }
 
-
-永井敬二コレクションよりエンツォ · マーリ100のプロジェット = 100 projects of Enzo Mari in the Keiji Nagai collection
-Nagai Keiji korekushon yori Entso Māri 100 no purojetto = 100 projects of Enzo Mari in the Keiji Nagai collection
-長崎県美術館; 永井敬二, 1948-; Enzo Mari 1932-; Keiji Nagai 1948-; Nagasaki-ken Bijutsukan.; 長崎県美術館; Nagasaki-ken (Japan). Bijutsukan; Nagasaki Prefectural Art Museum; Nagasaki-ken Bijutsukan; Nagasaki-ken (Japan). Bijutsukan; Nagasaki Prefectural Art Museum
-
--->
-  
-
-<style>
-
-  * {
-    margin:0;
-	--accent: rgb(15, 40, 220);
-	--bg: lightgrey;
-	--base: black;
-	--shade: rgb(220, 30, 20);
-  }
-
-  img::selection {
-    background:none;
-  }
-
-  html, 
-  body, 
-  button {
-    font:21px arial;
-  }
-
-  gif {
-    border: 2px
-    margin:70px 0px 0px 7px;
-          border-image: url("soil.gif") 27 / 36px 28px 18px 8px / 18px 14px 9px 4px
-
-  }
-
-  button {
-    padding:14px;
-  }
-
-  main {
-    position: relative;
-    float:left;
-
-  }
-
-  summary {
-    position: relative;
-    float:left;
-    clear:none;
-    margin:17px 0px 0px 70px;
-    color: var(--accent);
-text-decoration: none;
-box-shadow:
-    inset 0 0 1em red,
-    0 0 2em red;
-  }
-  
-  figure {
-    position: relative;
-    float:left;
-    clear:none;
-    margin:7px 9px 0px 7px;
-    border-image: url("soil.gif") 27 / 36px 28px 18px 8px / 18px 14px 9px 4px
-	border-radius: 9em;
-  padding: 2em;
-  width: fit-content;
-  font-weight: normal;
-  box-shadow: 0 0 0.95em 0.15em inset blue;
-	border-radius: 2em;
-text-align: center;  
-  }
-  
-
+    summary {
     
+      font-size: 1.5rem;
+      color: rgb(15, 40, 220);
+      cursor: pointer;
+      margin-bottom: -1rem;
+      display: inline-block; 
+      padding: 2px 6px;
+    }
 
- 
- 
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
 
-@keyframes mymove {
-  60% {opacity: 0;}
-}
-  img {
-    position: relative;
-    float:left;
-    width: 100%;
-    cursor: pointer;
-    margin-bottom:1px;
-  }
-  video {
-    position: relative;
-    float:left;
-    width: 100%;
-    cursor: pointer;
-    margin-bottom:1px;
-  }
-    p {
-    font:21px arial
-    color: green;
-  }
-  
-  @media (max-width:700px) {
-	  
-	  html,body{
-		  font:12px arial;
-	  }
-	  
-  }
-</style>
+    .card {
 
+      width: 100%;
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card img,
+    .card gif {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      display: block;
+
+    }
+
+    .card figcaption {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.85rem;
+      flex: 1;
+    }
+
+    .card.text-only {
+      padding: 12rem;
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin: 2rem 0 1rem;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 1rem; }
+      .grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
+    }
+  </style>
 </head>
+<body>
 
 
-<main>
+
+  <h1>Les Marnières, rooting </h1>
+<details>
+  <summary>Mid April</summary>
+    <div class="grid">
+<figure class="card"><img src="Mi-Avril2026/82337184-2782-49e2-bd68-c6ff3641c2c1 2.JPG"><figcaption>Semis en pot rond — lupins et autres</figcaption></figure>
+<figure class="card"><img src="Mi-Avril2026/8c09aee5-ff65-46d7-85ce-f12a7ce5844b.JPG"><figcaption>Amarante queue de renard rouge — semis en caissette</figcaption></figure>
+<figure class="card"><img src="Mi-Avril2026/76553898-0d9d-4b96-88de-f5decf664fec.JPG"><figcaption>Semis variés — betteraves, côtes de bette</figcaption></figure>
+<figure class="card"><img src="Mi-Avril2026/948b17e1-64e3-4e3e-ae86-ae866cdd5dfa 2.JPG"><figcaption>La planche — premières levées en pleine terre</figcaption></figure>
+<figure class="card"><img src="Mi-Avril2026/0a22d66c-bc02-4562-a26c-7a52ef673830.JPG"><figcaption>Côtes de bette à cardes rouges — repiquage en godets</figcaption></figure>
+<figure class="card"><img src="Mi-Avril2026/48feb15b-c1ac-4159-9305-5ac8f7e8a8f3 2.JPG"><figcaption>Serre — vue générale des semis</figcaption></figure>
+<figure class="card"><img src="Mi-Avril2026/28d371ff-0fed-462c-8b82-d5f0360c1641.JPG"><figcaption>Ciboulette en fleurs et herbes aromatiques</figcaption></figure>
+      </div>  
+  </details>  
+  
+  <details>
+  <summary>Beginning of April</summary>
+    <div class="grid">
+<figure class="card"><img src="Debut Avril/IMG_2201.jpeg"><figcaption>Arroche rouge</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2202.jpeg"><figcaption>Lupins</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2203.jpeg"><figcaption>Planches — fèves et pois en pleine terre</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2207.jpeg"><figcaption>Serre — vue générale deux étagères</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2211.jpeg"><figcaption>Serre — godets, laitues et semis divers</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2200.jpeg"><figcaption>Serre — plateau de semis en attente</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2209.jpeg"><figcaption>Serre — courges et herbes aromatiques</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2208.jpeg"><figcaption>Serre — outils et semis bas de l'étagère</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2210.jpeg"><figcaption>Serre — caissettes et godets vides</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2213.jpeg"><figcaption>Serre — vue d'ensemble étagère droite</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2218.jpeg"><figcaption>Serre — semis en gobelets recyclés</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2215.jpeg"><figcaption>Serre — lupins et semis en grands pots</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2206.jpeg"><figcaption>Serre — amarante rouge levée en caissette</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2214.jpeg"><figcaption>Serre — godets gris en rangée</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2216.jpeg"><figcaption>Serre — étagère avec laitues et courges</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2217.jpeg"><figcaption>Serre — vue latérale complète</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2212.jpeg"><figcaption>Serre — semis en gobelets, étiquette Chou rouge Redbar</figcaption></figure>
+      </div>  
+  </details> 
+  
+
+
+<br>
+
+
+    <h1>Montjoie, garden </h1>
+<details>
+  <summary>Mid April</summary>
+    <div class="grid">
+<figure class="card"><img src="Mi-Avril2026/82337184-2782-49e2-bd68-c6ff3641c2c1 2.JPG"><figcaption>Semis en pot rond — lupins et autres</figcaption></figure>
+<figure class="card"><img src="Mi-Avril2026/8c09aee5-ff65-46d7-85ce-f12a7ce5844b.JPG"><figcaption>Amarante queue de renard rouge — semis en caissette</figcaption></figure>
+<figure class="card"><img src="Mi-Avril2026/76553898-0d9d-4b96-88de-f5decf664fec.JPG"><figcaption>Semis variés — betteraves, côtes de bette</figcaption></figure>
+<figure class="card"><img src="Mi-Avril2026/948b17e1-64e3-4e3e-ae86-ae866cdd5dfa 2.JPG"><figcaption>La planche — premières levées en pleine terre</figcaption></figure>
+<figure class="card"><img src="Mi-Avril2026/0a22d66c-bc02-4562-a26c-7a52ef673830.JPG"><figcaption>Côtes de bette à cardes rouges — repiquage en godets</figcaption></figure>
+<figure class="card"><img src="Mi-Avril2026/48feb15b-c1ac-4159-9305-5ac8f7e8a8f3 2.JPG"><figcaption>Serre — vue générale des semis</figcaption></figure>
+<figure class="card"><img src="Mi-Avril2026/28d371ff-0fed-462c-8b82-d5f0360c1641.JPG"><figcaption>Ciboulette en fleurs et herbes aromatiques</figcaption></figure>
+      </div>  
+  </details>  
+  
+  <details>
+  <summary>Beginning of April</summary>
+    <div class="grid">
+<figure class="card"><img src="Debut Avril/IMG_2201.jpeg"><figcaption>Arroche rouge</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2202.jpeg"><figcaption>Lupins</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2203.jpeg"><figcaption>Planches — fèves et pois en pleine terre</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2207.jpeg"><figcaption>Serre — vue générale deux étagères</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2211.jpeg"><figcaption>Serre — godets, laitues et semis divers</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2200.jpeg"><figcaption>Serre — plateau de semis en attente</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2209.jpeg"><figcaption>Serre — courges et herbes aromatiques</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2208.jpeg"><figcaption>Serre — outils et semis bas de l'étagère</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2210.jpeg"><figcaption>Serre — caissettes et godets vides</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2213.jpeg"><figcaption>Serre — vue d'ensemble étagère droite</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2218.jpeg"><figcaption>Serre — semis en gobelets recyclés</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2215.jpeg"><figcaption>Serre — lupins et semis en grands pots</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2206.jpeg"><figcaption>Serre — amarante rouge levée en caissette</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2214.jpeg"><figcaption>Serre — godets gris en rangée</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2216.jpeg"><figcaption>Serre — étagère avec laitues et courges</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2217.jpeg"><figcaption>Serre — vue latérale complète</figcaption></figure>
+<figure class="card"><img src="Debut Avril/IMG_2212.jpeg"><figcaption>Serre — semis en gobelets, étiquette Chou rouge Redbar</figcaption></figure>
+      </div>  
+  </details> 
+
+
+
+
+
 
 <details>
-	
-<summary>Les plantes que j'ai commandé chez Semailles </summary>
-	<figure style="max-width:91%"><figcaption><h3><br> </p></figcaption></figure>
-	<figure style="max-width:11%"><img src="Amarante tête d'éléphant.png"><figcaption> <p>Amarante tête d'éléphant</p></figcaption></figure>
-	<figure style="max-width:11%"><img src="Fève d'Aguadulce.png"><figcaption> <p>Fève d'Aguadulce</p></figcaption></figure>
-	<figure style="max-width:41%"><img src="Amarante Queue de renard rouge.png"><figcaption> <p>Amarante Queue de renard rouge</p></figcaption></figure>
-	<figure style="max-width:21%"><img src="Lin Bleu (engrais vert).png"><figcaption> <p>Lin Bleu (engrais vert)</p></figcaption></figure>
-	<figure style="max-width:11%"><img src="Chou kale.png"><figcaption> <p>Chou kale</p></figcaption></figure>
- 	<figure style="max-width:21%"><img src="Pois à rames mangetout.png"><figcaption> <p>Pois à rames mangetout</p></figcaption></figure>
- 	<figure style="max-width:11%"><img src="Chervis.png"><figcaption> <p>Chervis</p></figcaption></figure>
- 	<figure style="max-width:11%"><img src="Myosotis.png"><figcaption> <p>Myosotis</p></figcaption></figure>
- 	<figure style="max-width:11%"><img src="Armoise annuelle.png"><figcaption> <p>Armoise annuelle</p></figcaption></figure>
- 	<figure style="max-width:11%"><img src="Côte de bette à cardes rouges.png"><figcaption> <p>Côte de bette à cardes rouges</p></figcaption></figure>
+  <summary>Les plantes commandées chez Semailles</summary>
+  <div class="grid">
+    <figure class="card"><img src="Amarante tête d'éléphant.png"><figcaption>Amarante tête d'éléphant</figcaption></figure>
+    <figure class="card"><img src="Fève d'Aguadulce.png"><figcaption>Fève d'Aguadulce</figcaption></figure>
+    <figure class="card"><img src="Amarante Queue de renard rouge.png"><figcaption>Amarante Queue de renard rouge</figcaption></figure>
+    <figure class="card"><img src="Lin Bleu (engrais vert).png"><figcaption>Lin Bleu (engrais vert)</figcaption></figure>
+    <figure class="card"><img src="Chou kale.png"><figcaption>Chou kale</figcaption></figure>
+    <figure class="card"><img src="Pois à rames mangetout.png"><figcaption>Pois à rames mangetout</figcaption></figure>
+    <figure class="card"><img src="Chervis.png"><figcaption>Chervis</figcaption></figure>
+    <figure class="card"><img src="Myosotis.png"><figcaption>Myosotis</figcaption></figure>
+    <figure class="card"><img src="Armoise annuelle.png"><figcaption>Armoise annuelle</figcaption></figure>
+    <figure class="card"><img src="Côte de bette à cardes rouges.png"><figcaption>Côte de bette à cardes rouges</figcaption></figure>
+  </div>
+</details>
+<br>
+<details>
+  <summary>Booksbooksbooks</summary>
+  <div class="grid">
+    
+    <figure class="card"><img src="oct7.jpeg"><figcaption>Broad beans (fèves) après un mois et demi — en espérant qu'elles passent l'hiver.</figcaption></figure>
+    <figure class="card"><img src="sept1.jpeg"><figcaption></figcaption></figure>
+    <figure class="card"><img src="oct2.jpeg"><figcaption>Alix ramasse un tas de feuilles.</figcaption></figure>
+    <figure class="card"><img src="oct3.jpeg"><figcaption>Premier essai pour faire un sol fertile durant l'hiver. Un grand tas de feuilles sous de larges bâches plastiques.</figcaption></figure>
+    <figure class="card"><img src="oct1.jpeg"><figcaption>Mon père, contrairement à moi, est dans l'anticipation — il aime ajouter des clôtures partout autour des plantes.</figcaption></figure>
+    <figure class="card"><img src="fukuoka.jpg"><figcaption>« Quand on pense qu'on commence à comprendre la nature, on peut être sûr qu'on est sur la mauvaise piste. »</figcaption></figure>
+    <figure class="card"><img src="fukuoka.jpg"><figcaption>Quatre principes : ne pas cultiver, pas de fertilisant chimique, pas d'herbicide, pas de dépendance aux produits chimiques.</figcaption></figure>
+    <figure class="card"><img src="fukuoka.jpg"><figcaption>« J'aspirais à une manière de cultiver naturelle, qui rende le travail plus aisé et non plus dur. »</figcaption></figure>
+  </div>
 </details>
 
 <details>
-<summary>Les Marnières</summary>
-	<figure style="max-width:20%"><img src="soil.gif" alt="Description de l'image"><figcaption><p>GOOD SOIL</p></figcaption></figure>
-	<figure style="max-width:31%"><figcaption><p>something i heard in the soil fertility business : If I pick up a handful of dirt and find four or more worms, i will work with you</p></figcaption></figure>
-	<figure style="max-width:31%"><img src="oct7.jpeg"><figcaption><p>Broad bean (fèves) after a month and a half! Just hoping for the winter. </p></figcaption></figure>
-
-	<figure style="max-width:31%"><img src="sept1.jpeg"><figcaption><p> </p></figcaption></figure>
-
-	<figure style="max-width:31%"><img src="oct2.jpeg"><figcaption><p>Alix is gathering a pile of leaves. </p></figcaption></figure>
-	<figure style="max-width:31%"><img src="oct3.jpeg"><figcaption><p>First attempt to make a fertile soil over the winter. A big stack of leaves is stock under these large plastic sheets.  </p></figcaption></figure>
-
-	<figure style="max-width:31%"><img src="oct1.jpeg"><figcaption><p>My father, unlike me, is into anticipation, he is very attached to adding gates everywhere around the plants : so they don't get eaten. I think he also like to hammer once in a while on these wooden sticks when he comes down.  </p></figcaption></figure>
-
-	<figure style="max-width:21%"><img src="fukuoka.jpg"><figcaption><p>"Quand on pense qu'on commence à comprendre la nature, on peut-être sûr qu'on est sûr la mauvaise piste.(...)Pourquoi est-il impossible de connaître la nature?"</p></figcaption></figure>
-	<figure style="max-width:21%"><img src="fukuoka.jpg"><figcaption><p>"Quatre principe de l'agriculture sauvage:-Ne pas cultiver <br> -Pas de fertilisant chimique ou de compost préparé <br> -Ne pas desherber aux herbicides <br> -Pas de dépendance enver les produits chimiques"</p></figcaption></figure>
-	<figure style="max-width:21%"><img src="fukuoka.jpg"><figcaption><p>"J'aspirais a une manière de cultiver qui fasse plaisir, naturelle, qui aboutisse à rendre le travail plus aisé et non plus dur."</p></figcaption></figure>
-
+  <summary>À trouver</summary>
+  <div class="grid">
+    <figure class="card"><img src="Old.jpeg"><figcaption>Old Man's Beard (Clematis vitalba)</figcaption></figure>
+    <figure class="card"><img src="larmedejob.jpeg"><figcaption>Larme de Job (Coix lacryma-jobi) — graines en perles</figcaption></figure>
+    <figure class="card"><img src="amarante.jpeg"><figcaption>Amaranthus tricolor, Joseph's Coat</figcaption></figure>
+  </div>
 </details>
 
+<h1>Barry Pepper : jardiner ou le pouvoir de planter sans attendre de résultats<br>
+gardening or the power of sowing seeds and roots</h1>
 
+<div class="grid">
+  <figure class="card"><img src="soil2.gif"></figure>
+  <figure class="card"><img src="pot.gif"><figcaption>Good soil</figcaption></figure>
+  <figure class="card"><img src="soil.gif"><figcaption>Good soil</figcaption></figure>
+</div>
 
-<details>
-<summary>To Find</summary>	
-	<figure style="max-width:91%"><figcaption><h3>Les plantes que j'aimerais bien que tu trouves <br> à la Ferté-vidame</p></figcaption></figure>
-	<figure style="max-width:21%"><img src="Old.jpeg"><figcaption><p>Old Man’s Beard (Clematis vitalba)</p></figcaption></figure>
-	<figure style="max-width:31%"><img src="larmedejob.jpeg"><figcaption><p>Larme de Job (Coix lacryma-jobi), des graines en perles </p></figcaption></figure>
-	<figure style="max-width:21%"><img src="amarante.jpeg"><figcaption><p>Amaranthus tricolor, or Joseph's Coat </p></figcaption></figure>
-
-</details>
-<br>
-<br>
-
-<br>
-
-<br>
-<br>
-<br>
-<br>
-
-
-<figure style="max-width:91%"><figcaption><h1>Barry Pepper : jardiner ou le pouvoir de planter sans attendre de résultats <br>
-gardening or the power of sowing seeds and roots
-<br> or the literal guide to ground</p></figcaption></figure>
-
-
-<audio autoplay loop>
-  <source src="horse.ogg" type="audio/ogg">
-  <source src="music.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
-
-<figure style="max-width:60%"><img src="soil2.gif" alt="Description de l'image"><figcaption><p>GOOD SOIL</p></figcaption></figure>
-	<figure style="max-width:20%"><img src="pot.gif" alt="Description de l'image"><figcaption><p>GOOD SOIL</p></figcaption></figure>
-<figure style="max-width:30%"><img src="soil.gif" alt="Description de l'image"><figcaption><p>GOOD SOIL</p></figcaption></figure>
-
-
-
-
-
-</main>
 
 
 </body>
 </html>
-
